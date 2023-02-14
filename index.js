@@ -159,7 +159,7 @@ function addTeamMember() {
             type: "list",
             name: "role",
             message: "What is the team member's role?",
-            choices: ["Manager", "Engineer", "Intern", "Employee", "None"],
+            choices: ["Manager", "Engineer", "Intern", "None"],
         },
         ])
         .then((answers) => {
@@ -172,9 +172,6 @@ function addTeamMember() {
             break;
             case "Intern":
             addIntern();
-            break;
-            case "Employee":
-            addEmployee();
             break;
             default:
             buildTeam();
